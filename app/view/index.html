@@ -1,0 +1,34 @@
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <link rel='stylesheet' href='../static/style.css'>
+  <script src='../static/client.js'></script>
+</head>
+<body>
+<div>
+  <div class='center'>
+    <div class='title'>Create your own sentences!</div>
+    <div class='detail'>
+     <p>Simply enter in a prompt (whatever you want it to be) and press Generate.</p>
+     <p>(Sentences may not be grammatically correct or coherent!)</p>
+     <b>(this is just a VERY primitive app using WT103, make something more sophisticated!)</b>
+    </div>
+    <div class='content'>
+        <div class = 'input'>
+            <input id='entered-text'
+                class = 'entered-text'
+                type='text'
+                name='entered-text'
+                placeholder = 'Prompt'>
+        </div>
+      <div class='analyze'>
+        <button id='generate-button' class='generate-button' type='button' onclick='analyze()'>Generate</button>
+      </div>
+      <div class='result-label'>
+        <label id='result-label'></label>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
