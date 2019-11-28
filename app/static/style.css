@@ -1,31 +1,44 @@
-body {
-    background-color: #75E6DA;
+body { /*
+    background-color: #75E6DA; */
+    background-image: url('usa.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .no-display {
     display: none;
 }
 
+.detail {
+    color: white;
+    text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black;
+    font-size: 20px;
+}
+
 .center {
     margin: auto;
-    padding: 10px 50px;
+    padding: 7px 50px;
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
+    font-family: "Comic Sans MS";
 }
 
 .title {
-    font-size: 30px;
+    font-size: 50px;
     margin-top: 1em;
-    margin-bottom: 1em;
-    color: #262626;
+    margin-bottom: 0.5cm;
+    color: white;
+    font-family: "Impact";
+    text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
 }
 
 .content {
-    margin-top: 10em;
+    margin-top: 8em;
 }
 
 .analyze {
-    margin-top: 5em;
+    margin-top: 2em;
 }
 
 .upload-label {
@@ -36,17 +49,18 @@ body {
 .result-label {
     margin-top: 0.5em;
     padding: 10px;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 button.generate-button {
     width: 200px;
     height: 40px;
-    border: solid 1px #e67581;
+    border: solid 2px #000000;
     border-radius: 5px;
-    background-color: #e67581;
-    font-size: 13px;
-    color: #ffffff;
+    background-color: #FFFFFF;
+    font-size: 17px;
+    color: #000000;
+    font-weight: bold;
 }
 
 button:focus {
