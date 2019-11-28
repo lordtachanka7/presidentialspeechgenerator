@@ -15,7 +15,7 @@ place your contruct/model name and urls here also, they are downloaded in setup_
 make sure that the link gives the file itself (if you click on the link it should start the download or show the raw file)
 '''
 
-data_file_url = 'https://drive.google.com/uc?export=download&id=1xpwW8T8BtB9G3Xoq5eWBuu0B73q0cG5X'
+data_file_url = 'https://drive.google.com/uc?export=download&id=1S9yhIHnQfkAuPMlQ5dYCKdYHqUGVyXzB'
 data_file_name = 'data_lm.pkl'
 path = Path(__file__).parent
 
