@@ -78,7 +78,7 @@ async def analyze(request):
     N_SENTENCES = 1
     # mess around with the temperature a bit - you may get better results
     prediction = "\n" + learn.predict(TEXT, n_words = N_WORDS, temperature = 0.75)
-    return JSONResponse({'result': str(prediction)})
+    return JSONResponse({'result': str(prediction.lower())})
 
 
 if __name__ == '__main__':
