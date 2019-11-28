@@ -3,7 +3,7 @@ var el = x => document.getElementById(x);
 
 function analyze() {
 
-  el("generate-button").innerHTML = "Generating...";
+  el("generate-button").innerHTML = "Polishing the Beast...";
   var xhr = new XMLHttpRequest();
   var loc = window.location;
   var enteredText = el("entered-text")
