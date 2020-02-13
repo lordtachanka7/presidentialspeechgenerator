@@ -45,7 +45,7 @@ async def setup_learner():
     await download_file(data_file_url, path / data_file_name) # copy/oaste this for any file downloads you might need (construct, model etc)
     data_lm = load_data(path, file='data_lm.pkl')
     try:
-        learn = language_model_learner(data_lm, AWD_LSTM, pretrained=URLs.WT103, drop_mult=0.5)
+        learn = language_model_learner(data_lm, arch = AWD_LSTM, pretrained=URLs.WT103_FWD, drop_mult=0.5)
         return learn
     except RuntimeError as e:
         if len(e.args) > 0 and 'CPU-only machine' in e.args[0]:
