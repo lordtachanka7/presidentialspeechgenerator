@@ -8,9 +8,7 @@ COPY requirements.txt .
 RUN pip install --upgrade -r requirements.txt
 RUN pip install --upgrade --user prompt_toolkit==2.0.10
 
-RUN pip install -q git+https://github.com/fastai/fastprogress --upgrade
-RUN pip install -q git+https://github.com/fastai/fastcore --upgrade
-RUN pip install -q git+https://github.com/fastai/fastai2 --upgrade
+RUN pip install git+https://github.com/fastai/fastai2 --upgrade
 
 COPY app app/
 
